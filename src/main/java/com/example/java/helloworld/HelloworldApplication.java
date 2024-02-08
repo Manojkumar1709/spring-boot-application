@@ -2,8 +2,8 @@ package com.example.java.helloworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @SpringBootApplication
@@ -13,7 +13,7 @@ public class HelloworldApplication {
 		SpringApplication.run(HelloworldApplication.class, args);
 	}
 
-	@RequestMapping("/")
+	@GetMapping("/")
     String helloWorld() {
         return "<h3>Hello Welcome to Spring Boot Application<h3>";
     }
