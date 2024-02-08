@@ -15,7 +15,7 @@ public class HelloworldApplication {
 
 	@RequestMapping("/")
     String helloWorld() {
-        return "<h3>Hello Welcome to Spring Boot Application<h3>";
+        return "Welcome to Spring Boot Application";
     }
 
 }
